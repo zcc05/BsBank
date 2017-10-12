@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>拆借详情</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/LendingDetails.css"/>
+</head>
+<body>
+<!--header部分开始-->
+<div class="w header clearfix">
+    <div class="logo fl">
+        <img src="../images/logo.fw.png" alt=""/>
+    </div>
+
+    <div class="nav fr clearfix">
+        <div class="date">
+            <i></i> <span>2016年6月23日</span>  <s></s><span>18:36</span>
+        </div>
+        <div class="menu" >
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../Details/assetsDeal.html">资产交易</a></li>
+                <li><a href="../Details/syndicatedLoan.html">联合贷款</a></li>
+                <li><a class="onlyxu" href="../Details/AssetLending.html">资金业务</a></li>
+                <li><a href="../MyAccount/AboutUs.html">关于我们</a></li>
+                <li><a href="../MyAccount/MyAccount.html">我的账户</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <script>
+        var now = new Date();
+        var years = document.getElementsByTagName('span')[0];
+        var times = document.getElementsByTagName('span')[1];
+        var d = now.getDate();
+        var m = now.getMonth();
+        var y = now.getFullYear();
+        var h = now.getHours();
+        var s = now.getMinutes();
+        function aa(bb){
+            return bb<10? "0"+bb:bb;
+        }
+        h=aa(h);
+        s=aa(s);
+        years.innerHTML = y+'年'+(m+1)+'月'+d+'日';
+        times.innerHTML = h+':'+s;
+    </script>
+
+</div>
+<!--header部分结束-->
+
+<div style="background-color: #f9f9f9;">
+    <div class="w propertyDetailsAll">
+        <!--包头钢铁债券部分开始-->
+        <div class="btgtbond ">
+            <div class="btgtbond-top clearfix">
+                <h3 class="fl">包头钢铁集团2016年公司债券</h3>
+                <h3 class="fr bianhao">资产编号:BS20160612571</h3>
+            </div>
+            <ul>
+                <li><p>70000</p><i>拆出金额(万元)</i></li>
+                <li><p>5.9</p><i>预计年化收益(%)</i></li>
+                <li class="noborder"><p>12</p><i>资产期限(月)</i></li>
+            </ul>
+            <p class="qiye fr">抵押物说明书(下载)<p/>
+        </div>
+        <!--包头钢铁债券部分结束-->
+
+        <p class="readed"><input type="checkbox" class="agree"/>我已认真阅读并同意《资产购买协议》</p>
+        <button id="sure">确认支付</button>
+    </div>
+
+</div>
+
+<!--footer部分开始-->
+<div class="footer">
+    <div class="w footer-main">
+        <div class="footer-main-l fl">
+            <div class="footer-main-l-top">
+                <ul><li style="margin-left: 0">PINTEC &nbsp;|</li>
+                    <li>关于我们 &nbsp;|</li>
+                    <li>法律声明 &nbsp;|</li>
+                    <li>媒体报道 &nbsp;|</li>
+                    <li>团队介绍 &nbsp;|</li>
+                    <li>帮助中心 &nbsp;|</li>
+                    <li>友情链接 &nbsp;</li>
+                </ul><br/>
+                <p>版权所有: &nbsp;包商银行 &nbsp;信息产业备案: &nbsp;蒙ICP备05003339号 &nbsp;包头网监备案: 蒙.网警15020300292</p>
+            </div>
+            <div class="footer-main-l-bot">
+                <img src="../images/enda.png" alt=""/>
+                <img src="../images/endb.png" alt=""/>
+                <img src="../images/endc.png" alt=""/>
+                <img src="../images/endd.png" alt=""/>
+            </div>
+        </div>
+        <div class="footer-main-r fr">
+            <div class="footer-main-r-service">
+                <p>24小时服务热线</p>
+                <p>95352</p>
+                <p><i></i>在线客服 &nbsp;&nbsp;&nbsp;<i></i>客服邮箱</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--footer部分结束-->
+</body>
+</html>
+<script>
+    window.onload=function(){
+        var sure = document.getElementById('sure');
+        sure.onclick = function () {
+            window.location.href = '../psw/enterPassword3.html';
+        }
+    }
+
+</script>

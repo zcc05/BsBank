@@ -1,0 +1,682 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            border: 0;
+        }
+
+        .all {
+
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .screen {
+            width: 100%;
+            height:100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .screen li {
+            width: 690px;
+            height: 330px;
+            overflow: hidden;
+            float: left;
+        }
+
+        .screen ul {
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 2760px;
+        }
+
+        .all ol {
+            position: absolute;
+            right: 300px;
+            bottom: 10px;
+            line-height: 20px;
+            text-align: center;
+
+        }
+
+        .all ol li {
+            float: left;
+            width: 14px;
+            height: 14px;
+            background: #2DD6D1;
+            margin-left: 20px;
+            cursor: pointer;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        .all ol li.current {
+            background: #2DB0DE;
+        }
+
+        #arr {
+            display: none;
+        }
+
+        #arr span {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            margin-top: -20px;
+            background: #000;
+            cursor: pointer;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            font-family: '黑体';
+            font-size: 30px;
+            color: #fff;
+            opacity: 0.3;
+            border: 1px solid #fff;
+        }
+
+        #arr #right {
+            right: 5px;
+            left: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <!--header部分开始-->
+    <div class="w header clearfix">
+        <div class="logo fl">
+            <img src="images/logo.fw.png" alt=""/>
+        </div>
+
+        <div class="nav fr clearfix">
+            <div class="date">
+                <i></i> <span>2016年6月23日</span>  <s></s><span>18:36</span>
+            </div>
+            <div class="menu" >
+                <ul>
+                    <li><a class="onlyxu" href="index.html">首页</a></li>
+                    <li><a href="Details/assetsDeal.html">资产交易</a></li>
+                    <li><a href="Details/syndicatedLoan.html">联合贷款</a></li>
+                    <li><a href="Details/AssetLending.html">资金业务</a></li>
+                    <li><a href="MyAccount/AboutUs.html">关于我们</a></li>
+                    <li><a href="MyAccount/MyAccount.html">我的账户</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <script>
+            var now = new Date();
+            var years = document.getElementsByTagName('span')[0];
+            var times = document.getElementsByTagName('span')[1];
+            var d = now.getDate();
+            var m = now.getMonth();
+            var y = now.getFullYear();
+            var h = now.getHours();
+            var s = now.getMinutes();
+            function aa(bb){
+                 return bb<10? "0"+bb:bb;
+            }
+            h=aa(h);
+            s=aa(s);
+            years.innerHTML = y+'年'+(m+1)+'月'+d+'日';
+            times.innerHTML = h+':'+s;
+        </script>
+
+    </div>
+    <!--header部分结束-->
+
+    <!--content部分开始-->
+    <div class="content ">
+        <div class="w content-m clearfix">
+            <div class="content-m-l fl ">
+                <div class="content-m-l-top">
+                    <div class="cajing new">产品最新动态
+                        <i>▼</i>
+                    </div>
+                    <div class="hangye">购买记录
+                        <i class="down2">▼</i>
+                    </div>
+                </div>
+
+                <div class="banner all" id='box'>
+                <div class="screen">
+                    <ul>
+                        <li><img src="images/新闻a.jpg" width="690" height="330"></li>
+                        <li><img src="images/新闻2.jpg" width="690" height="330"></li>
+                        <li><img src="images/新闻3.jpg" width="690" height="330"></li>
+                    </ul>
+                    <ol>
+                    </ol>
+                </div>
+                <div id="arr"><span id="left">&lt;</span><span id="right">&gt;</span></div>
+            </div>
+
+                <div class="banner newscroll" id="demo" style="display: none">
+                    <div id="demo1">
+                        <ul>
+                        <li><a href="#">成功购买包商银行债券 &nbsp; &yen; 487249元 &nbsp;&nbsp;&nbsp;&nbsp; 12分钟前</a></li>
+                        <li><a href="#">成功购买包商银行债券 &nbsp; &yen; 867249元 &nbsp;&nbsp;&nbsp;&nbsp; 23分钟前.</a></li>
+                        <li><a href="#">成功购买呼市银行债券 &nbsp; &yen; 446749元 &nbsp;&nbsp;&nbsp;&nbsp; 26分钟前.</a></li>
+                        <li><a href="#">成功购买内蒙银行债券 &nbsp; &yen; 987249元 &nbsp;&nbsp;&nbsp;&nbsp; 30分钟前.</a></li>
+                        <li><a href="#">成功购买包商银行债券 &nbsp; &yen; 487249元 &nbsp;&nbsp;&nbsp;&nbsp; 32分钟前</a></li>
+                        <li><a href="#">成功购买包商银行债券 &nbsp; &yen; 867249元 &nbsp;&nbsp;&nbsp;&nbsp; 43分钟前.</a></li>
+                        <li><a href="#">成功购买呼市银行债券 &nbsp; &yen; 446749元 &nbsp;&nbsp;&nbsp;&nbsp; 56分钟前.</a></li>
+                        <li><a href="#">成功购买内蒙银行债券 &nbsp; &yen; 987249元 &nbsp;&nbsp;&nbsp;&nbsp; 58分钟前.</a></li>
+
+                        </ul>
+                    </div>
+                    <div id="demo2"></div>
+                </div>
+            </div>
+
+
+            <div class="content-m-r fr">
+                <p>登录个人账户</p>
+                <input type="text" onfocus="setStyle(this.id)" onblur="removeStyle(this.id)"  id="inp1" value="用户名/手机号"/>
+                <input type="text" value="登录密码" onfocus="setStyle(this.id)" onblur="removeStyle(this.id)" id="inp2"/>
+                <input type="text" onfocus="setStyle(this.id)" onblur="removeStyle(this.id)" id="inp3" value="附加码"/> <img src="images/验证码.png" alt=""/>
+                <button>登录</button>
+                <h5>未注册账户? &nbsp;<a href="##">马上注册</a></h5>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        function setStyle(x)
+        {
+            var h = document.getElementById(x);
+            h.value = '';
+            h.style.color = "black";
+        }
+        function removeStyle(x)
+        {
+            var h = document.getElementById(x);
+                h.val = this.value;
+        }
+    </script>
+
+    <!--content部分结束-->
+
+<div style="background-color:#f9f9f9;">
+    <!--products部分开始-->
+    <div class="w products clearfix">
+        <div class="products-l fl">
+            <img src="images/mid.fw.png" alt=""/>
+            <ul>
+                <li class="zimp">信贷产品</li>
+                <li>投行类产品</li>
+                <li>资金拆借</li>
+            </ul>
+        </div>
+        <div class="products-r fr clearfix">
+            <div class="productsall">
+                <!--信贷产品开始-->
+                <div class="selected tab1">
+                    <div class="tab1-l">
+                        <h3>资产编号: BS20160612571</h3>
+                        <p>神华蒙西煤化股份有限公司</p>
+                        <span>贷款额度 (万元)</span>
+                        <i>10000</i>
+                        <s></s>
+                        <button>查看详情</button>
+                    </div>
+                    <div class="tab1-l">
+                        <h3>资产编号: BS20160612571</h3>
+                        <p>乌海市新世纪钛合金有限公司</p>
+                        <span>贷款额度 (万元)</span>
+                        <i>20000</i>
+                        <s></s>
+                        <button>查看详情</button>
+                    </div>
+                    <div class="tab1-l nomargin">
+                        <h3>资产编号: BS20160612571</h3>
+                        <p>内蒙第一机械制造集团有限公司</p>
+                        <span>贷款额度 (万元)</span>
+                        <i>8000</i>
+                        <s></s>
+                        <button>查看详情</button>
+                    </div>
+
+                    <a href="##" class="fr more">查看更多></a>
+                </div>
+                <!--信贷产品结束-->
+
+                <!--投行类产品开始-->
+                <div class="noselected tab1">
+                    <div class="tab1-l">
+                        <h3>资产编号: BS20160612571</h3>
+                        <p>包头钢铁集团2016年公司债券</p>
+                        <span>总资产额度 (万元)</span>
+                        <i>8000</i>
+                        <s></s>
+                        <button>查看详情</button>
+                    </div>
+                    <div class="tab1-l">
+                        <h3>资产编号: BS20160612571</h3>
+                        <p>包头铝业集团集合资金信托计划</p>
+                        <span>总资产额度 (万元)</span>
+                        <i>10000</i>
+                        <s></s>
+                        <button>查看详情</button>
+                    </div>
+                    <div class="tab1-l nomargin">
+                        <h3>资产编号: BS20160612571</h3>
+                        <p>神华集团2016年非公开债券</p>
+                        <span>总资产额度 (万元)</span>
+                        <i>900</i>
+                        <s></s>
+                        <button>查看详情</button>
+                    </div>
+
+                    <a href="##" class="fr more">查看更多></a>
+                </div>
+
+
+                <!--投行类产品结束-->
+
+                <!--资产拆借开始-->
+                <div class="noselected tab1">
+                    <div class="tab1-l">
+                        <h3>资产编号: BS20160612571</h3>
+                        <p>鄂尔多斯农村商业银行定期存款</p>
+                        <span>拆借金额 (万元)</span>
+                        <i>7000</i>
+                        <s></s>
+                        <button>查看详情</button>
+                    </div>
+                    <div class="tab1-l">
+                        <h3>资产编号: BS20160612571</h3>
+                        <p>内蒙古银行定期存款</p>
+                        <span>拆借金额 (万元)</span>
+                        <i>20000</i>
+                        <s></s>
+                        <button>查看详情</button>
+                    </div>
+                    <div class="tab1-l nomargin">
+                        <h3>资产编号: BS20160612571</h3>
+                        <p>乌海银行定期存款</p>
+                        <span>拆借金额 (万元)</span>
+                        <i>8000</i>
+                        <s></s>
+                        <button>查看详情</button>
+                    </div>
+
+                    <a href="##" class="fr more">查看更多></a>
+                </div>
+                <!--资产拆借结束-->
+
+
+                <!--信贷产品开始-->
+                <!--<div class="selected">-->
+                    <!--<table width="100%" height="350px" border="2" cellspacing="0">-->
+                        <!--<tr style="background-color: #D2EBFF;">-->
+                            <!--<th width="50%">名称</th>-->
+                            <!--<th width="30%">货款金融</th>-->
+                            <!--<th width="20%">详情</th>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>神华蒙西煤化股份有限公司</td>-->
+                            <!--<td>1,2732</td>-->
+                            <!--<td><button>查询</button></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>乌海市新世纪钛合金有限公司</td>-->
+                            <!--<td>1,0484</td>-->
+                            <!--<td><button>查询</button></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>内蒙第一机械制造集团有限公司</td>-->
+                            <!--<td>1,0484</td>-->
+                            <!--<td><button>查询</button></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>包头北方创业股份有限公司</td>-->
+                            <!--<td>1,019</td>-->
+                            <!--<td><button>查询</button></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>内蒙第一机械制造集团有限公司</td>-->
+                            <!--<td>1,068</td>-->
+                            <!--<td><button>查询</button></td>-->
+                        <!--</tr>-->
+
+                    <!--</table>-->
+                    <!--<a href="##" class="fr more">查看更多></a>-->
+
+                <!--</div>-->
+                <!--信贷产品开结束-->
+
+                <!--投行类产品开始-->
+                <!--<div class="noselected">-->
+                    <!--<table width="100%" height="350px" border="2" cellspacing="0">-->
+                        <!--<tr style="background-color: #D2EBFF;">-->
+                            <!--<th width="50%">名称</th>-->
+                            <!--<th width="30%">资产额度</th>-->
+                            <!--<th width="20%">详情</th>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>包头钢铁集团2016年公司债券</td>-->
+                            <!--<td>1,2732</td>-->
+                            <!--<td><button>查看</button></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>包头铝业集团集合资金信托计划</td>-->
+                            <!--<td>1,0484</td>-->
+                            <!--<td><button>查看</button></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>神华集团2016年非公开债务</td>-->
+                            <!--<td>1,0484</td>-->
+                            <!--<td><button>查看</button></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>乌海市新世界钛合金私募债</td>-->
+                            <!--<td>1,019</td>-->
+                            <!--<td><button>查看</button></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>神华集团2016年非公开债务</td>-->
+                            <!--<td>1,068</td>-->
+                            <!--<td><button>查看</button></td>-->
+                        <!--</tr>-->
+
+                    <!--</table>-->
+                    <!--<a href="##" class="fr more">查看更多></a>-->
+
+                <!--</div>-->
+                <!--投行类产品开始-->
+
+
+                <!--信贷产品开始-->
+                <!--<div class="selected">-->
+                    <!--<div class="products-r-list1 fl">-->
+                        <!--<div id="select1">贷款金额-->
+                            <!--<select>-->
+                            <!--<option value="">5.0</option>-->
+                            <!--<option value="">10.0</option>-->
+                            <!--</select>-->
+                            <!--<span>万元</span>-->
+                        <!--</div>-->
+                        <!--<div>贷款期限-->
+                            <!--<select>-->
+                            <!--<option value="">12个月</option>-->
+                            <!--<option value="">24个月</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+                        <!--<div>职业身份-->
+                            <!--<select>-->
+                            <!--<option value="">不限</option>-->
+                            <!--</select>-->
+                        <!--</div>-->
+                        <!--<button>搜索贷款</button>-->
+                        <!--<ul>-->
+                            <!--<li>热门贷款 :</li>-->
+                            <!--<li>5万个人贷款</li>-->
+                            <!--<li>10万个人贷款</li>-->
+                            <!--<li>20万企业贷款</li>-->
+                            <!--<li>50万企业贷款</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="products-r-img fr">-->
+                        <!--<div>-->
+                        <!--<img src="images/icona.png" alt=""/>-->
+                        <!--<p>多家权威机构</p>-->
+                        <!--</div>-->
+                    <!--<div>-->
+                        <!--<img src="images/iconb.png" alt=""/>-->
+                        <!--<p>免费申请</p>-->
+                    <!--</div>-->
+                    <!--<div>-->
+                        <!--<img src="images/iconc.png" alt=""/>-->
+                        <!--<p>最快1天放款</p>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+                <!--</div>-->
+                <!--信贷产品结束-->
+                <!--资产证券产品开始-->
+                <!--<div class="noselected">-->
+                    <!--<table width="100%" height="350px" border="2" cellspacing="0">-->
+                        <!--<tr style="background-color: #D2EBFF;">-->
+                            <!--<th width="40%">集合计划名称</th>-->
+                            <!--<th width="40%">集合计划单位净值</th>-->
+                            <!--<th width="20%">历史</th>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>国信德威增持2号</td>-->
+                            <!--<td>1,2732</td>-->
+                            <!--<td><button>查询</button></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>国信沃森未来2号</td>-->
+                            <!--<td>1,0484</td>-->
+                            <!--<td><button>查询</button></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>“金理财”8号集合计划</td>-->
+                            <!--<td>1,0484</td>-->
+                            <!--<td><button>查询</button></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>“金理财”债券分级1号</td>-->
+                            <!--<td>1,019</td>-->
+                            <!--<td><button>查询</button></td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td>国信OTC金福1号</td>-->
+                            <!--<td>1,068</td>-->
+                            <!--<td><button>查询</button></td>-->
+                        <!--</tr>-->
+
+                    <!--</table>-->
+                    <!--<a href="##" class="fr more">查看更多></a>-->
+
+                <!--</div>-->
+                <!--资产证券产品结束-->
+                <!--/*投资类产品开始*/-->
+                <!--<div class="products-list3 noselected">-->
+                    <!--<div class="products-list3-items1">-->
+                        <!--<h3>华安易富黄金ETF联接C</h3>-->
+                        <!--<p>指数型基金<i>高风险</i></p>-->
+                        <!--<h3>近一年涨跌幅<i>20.03<s>%</s></i></h3> <button class="fr">投资</button>-->
+                    <!--</div>-->
+                    <!--<div class="products-list3-items1">-->
+                        <!--<h3>易方达稳健收益A</h3>-->
+                        <!--<p>债券型基金<i class="iyellow">中风险</i></p>-->
+                        <!--<h3>近一年涨跌幅<i>8.45<s>%</s></i></h3> <button class="fr">投资</button>-->
+                    <!--</div>-->
+                    <!--<div class="products-list3-items1">-->
+                        <!--<h3>南方量化成长</h3>-->
+                        <!--<p>指数型基金<i>高风险</i></p>-->
+                        <!--<h3>近一年涨跌幅<i>17.20<s>%</s></i></h3> <button class="fr">投资</button>-->
+                    <!--</div>-->
+                    <!--<div class="products-list3-items1">-->
+                        <!--<h3>兴全轻资产</h3>-->
+                        <!--<p>指数型基金<i>高风险</i></p>-->
+                        <!--<h3>近一年涨跌幅<i>15.39<s>%</s></i></h3> <button class="fr">投资</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--/*投资类产品结束*/-->
+                <!--&lt;!&ndash;/*贸易融资类产品开始*/&ndash;&gt;-->
+                <!--<div class="products-list4 noselected">-->
+                    <!--<div class="products-list4-items1">-->
+                        <!--<p><i>▶</i> 先票/款后货标准授信</p>-->
+                        <!--<p><i>▶</i> 非标准仓单质押融资</p>-->
+                        <!--<p><i>▶</i> 融资租赁保理</p>-->
+                        <!--<p><i>▶</i> 经销商分期销售融资业务</p>-->
+                    <!--</div>-->
+                    <!--<div class="products-list4-items1">-->
+                        <!--<p><i>▶</i> 先票/款后货担保提货授信</p>-->
+                        <!--<p><i>▶</i> 动产(抵)质押授信</p>-->
+                        <!--<p><i>▶</i> 国内保理应收账款池融资</p>-->
+                    <!--</div>-->
+                    <!--<div class="products-list4-items1">-->
+                        <!--<p><i>▶</i> 标准仓单质押融资</p>-->
+                        <!--<p><i>▶</i> 信用险项下国内保理</p>-->
+                        <!--<p><i>▶</i> 机器设备融资</p>-->
+                    <!--</div>-->
+                    <!--<div class="products-list4-items1">-->
+                        <!--<p><i>▶</i> 国内信用证</p>-->
+                        <!--<p><i>▶</i> 国内保理</p>-->
+                        <!--<p><i>▶</i> 反向保理</p>-->
+                        <!--<a href="##" class="fr">查看更多></a>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+                <!--&lt;!&ndash;/*贸易融资类产品结束*/&ndash;&gt;-->
+                <!--&lt;!&ndash;/*理财产品开始*/&ndash;&gt;-->
+                <!--<div class="products-list5 noselected ">-->
+                    <!--<div class="tuan1">-->
+                        <!--<div class="tuan1-items">-->
+                            <!--<img src="images/tuan1.fw.png" alt=""/>-->
+                            <!--<h3>新手团</h3>-->
+                        <!--</div>-->
+                        <!--<div class="tuan1-items tuan1-items-m">-->
+                            <!--<p>10<i>%</i></p>-->
+                            <!--<h5>预期年化收益率</h5>-->
+                        <!--</div>-->
+                        <!--<div class="tuan1-items tuan1-items-r">-->
+                            <!--<p>1,000<i>元</i></p>-->
+                            <!--<h5>起投金额</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="tuan1">-->
+                        <!--<div class="tuan1-items">-->
+                            <!--<img src="images/tuan2.fw.png" alt=""/>-->
+                            <!--<h3>经典团</h3>-->
+                        <!--</div>-->
+                        <!--<div class="tuan1-items tuan1-items-m">-->
+                            <!--<p>7<i>%</i></p>-->
+                            <!--<h5>预期年化收益率</h5>-->
+                        <!--</div>-->
+                        <!--<div class="tuan1-items tuan1-items-r">-->
+                            <!--<p>5,000<i>元</i></p>-->
+                            <!--<h5>起投金额</h5>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="tuan1">-->
+                        <!--<div class="tuan1-items">-->
+                            <!--<img src="images/tuan3.fw.png" alt=""/>-->
+                            <!--<h3>季季翻</h3>-->
+                        <!--</div>-->
+                        <!--<div class="tuan1-items tuan1-items-m">-->
+                            <!--<p>8<i>%</i></p>-->
+                            <!--<h5>预期年化收益率</h5>-->
+                        <!--</div>-->
+                        <!--<div class="tuan1-items tuan1-items-r">-->
+                            <!--<p>10,000<i>元</i></p>-->
+                            <!--<h5>起投金额</h5>-->
+                        <!--</div>-->
+                        <!--<a href="##" class="fr">查看更多></a>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+                <!--&lt;!&ndash;/*理财产品结束*/&ndash;&gt;-->
+                <!--&lt;!&ndash;/*代销基金开始*/&ndash;&gt;-->
+                <!--<div class="products-list6 noselected">-->
+                    <!--<div class="hbjj fl">-->
+                        <!--<h3>货币基金</h3>-->
+                        <!--<p>积少成多，零钱生息</p>-->
+                        <!--<div class="hbjj-sy">-->
+                            <!--<h4>广发钱袋子</h4>-->
+                            <!--<p>7日年化收益<i>2.54%</i></p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="hbjj fr">-->
+                        <!--<h3>债券基金</h3>-->
+                        <!--<p>稳定投资，抗风险强</p>-->
+                        <!--<div class="hbjj-sy">-->
+                            <!--<h4>南方双元A</h4>-->
+                            <!--<p>今年以来收益<i>11.17%</i></p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<a href="##" class="fr">查看更多></a>-->
+                <!--</div>-->
+                <!--&lt;!&ndash;/*代销基金结束*/&ndash;&gt;-->
+            </div>
+        </div>
+
+
+    </div>
+    <!--products部分结束-->
+
+
+    <!--partner部分开始-->
+    <div class="w partner">
+        <p>合作机构</p>
+        <div>
+            <img src="images/hzyh1.fw.png" alt=""/>
+            <img src="images/hzyh2.fw.png" alt=""/>
+            <img src="images/hzyh3.fw.png" alt=""/>
+            <img src="images/hzyh4.fw.png" alt=""/>
+            <img src="images/hzyh5.fw.png" alt=""/>
+            <img src="images/hzyh6.fw.png" alt=""/>
+            <img src="images/hzyh7.fw.png" alt=""/>
+            <img src="images/hzyh8.fw.png" alt=""/>
+            <img src="images/hzyh9.fw.png" alt=""/>
+            <img src="images/hzyh10.fw.png" alt=""/>
+            <img src="images/hzyh11.fw.png" alt=""/>
+            <img src="images/hzyh12.fw.png" alt=""/>
+        </div>
+        <span class="nextL"><</span>
+        <span class="nextR">></span>
+    </div>
+
+    <!--partner部分结束-->
+</div>
+
+    <!--footer部分开始-->
+    <div class="footer">
+        <div class="w footer-main clearfix">
+            <div class="footer-main-l fl">
+                <div class="footer-main-l-top">
+                    <ul><li style="margin-left: 0">PINTEC &nbsp;|</li>
+                        <li>关于我们 &nbsp;|</li>
+                        <li>法律声明 &nbsp;|</li>
+                        <li>媒体报道 &nbsp;|</li>
+                        <li>团队介绍 &nbsp;|</li>
+                        <li>帮助中心 &nbsp;|</li>
+                        <li>友情链接 &nbsp;</li>
+                    </ul><br/>
+                    <p>版权所有: &nbsp;包商银行 &nbsp;信息产业备案: &nbsp;蒙ICP备05003339号 &nbsp;包头网监备案: 蒙.网警15020300292</p>
+                </div>
+                <div class="footer-main-l-bot">
+                    <img src="images/enda.png" alt=""/>
+                    <img src="images/endb.png" alt=""/>
+                    <img src="images/endc.png" alt=""/>
+                    <img src="images/endd.png" alt=""/>
+                </div>
+            </div>
+            <div class="footer-main-r fr">
+                <div class="footer-main-r-service">
+                    <p>24小时服务热线</p>
+                    <p>95352</p>
+                    <p><i></i>在线客服 &nbsp;&nbsp;&nbsp;<i></i>客服邮箱</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer部分结束-->
+    <script src="lib/jquery-1.11.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
+

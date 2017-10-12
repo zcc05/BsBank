@@ -1,0 +1,504 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>联合贷款</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/syndicatedLoan.css"/>
+
+</head>
+<body>
+<!--header部分开始-->
+<div class="w header clearfix">
+    <div class="logo fl">
+        <img src="../images/logo.fw.png" alt=""/>
+    </div>
+
+    <div class="nav fr clearfix">
+        <div class="date">
+            <i></i> <span>2016年6月23日</span>  <s></s><span>18:36</span>
+        </div>
+        <div class="menu" >
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../Details/assetsDeal.html">资产交易</a></li>
+                <li><a class="onlyxu"  href="../Details/syndicatedLoan.html">联合贷款</a></li>
+                <li><a href="../Details/AssetLending.html">资金业务</a></li>
+                <li><a href="../MyAccount/AboutUs.html">关于我们</a></li>
+                <li><a href="../MyAccount/MyAccount.html">我的账户</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <script>
+        var now = new Date();
+        var years = document.getElementsByTagName('span')[0];
+        var times = document.getElementsByTagName('span')[1];
+        var d = now.getDate();
+        var m = now.getMonth();
+        var y = now.getFullYear();
+        var h = now.getHours();
+        var s = now.getMinutes();
+        function aa(bb){
+            return bb<10? "0"+bb:bb;
+        }
+        h=aa(h);
+        s=aa(s);
+        years.innerHTML = y+'年'+(m+1)+'月'+d+'日';
+        times.innerHTML = h+':'+s;
+    </script>
+
+</div>
+<!--header部分结束-->
+
+<!--submenu部分开始-->
+<div class="submenu">
+    <div class="w submenuAll">
+        <ul class="submenu-l fl" >
+            <li>贷款所属金融机构:</li>
+            <li>贷款人信用评级:</li>
+            <li>贷款类别:</li>
+            <li>担保方式:</li>
+            <li>贷款利率:</li>
+        </ul>
+        <div class="submenu-button fl">
+            <button>全部</button>
+            <button>全部</button>
+            <button>全部</button>
+            <button>全部</button>
+            <button>全部</button>
+        </div>
+        <div class="submenuselect">
+            <ul>
+                <li><a>内蒙古银行</a></li>
+                <li><a>乌海银行</a></li>
+                <li><a>鄂尔多斯农村商业银行</a></li>
+                <li><a>通辽金古村镇银行</a></li>
+                <li><input id="inpbank" type="text" value="输入银行名称"/></li>
+                <script>
+                    var inp = document.getElementById("inpbank");
+                    inp.onfocus = function(){
+                        if(inp.value=="请输入银行名称"){
+                            inp.value="";
+                        }
+                    }
+                    inp.onblur = function(){
+                        if(inp.value==""){
+                            inp.value = "请输入银行名称";
+                            inp.style.color = "#ccc";
+                        }else{
+                            inp.style.color = "#333";
+                        }
+                    }
+
+                </script>
+            </ul>
+        </div>
+        <div class="submenuselect">
+            <ul>
+                <li><a>AAA</a></li>
+                <li><a>AA+</a></li>
+                <li><a>AA</a></li>
+                <li><a>AA-</a></li>
+                <li><a>A+</a></li>
+                <li><a>A</a></li>
+                <li><a>A-</a></li>
+                <li><a>BBB+</a></li>
+                <li><a>BBB</a></li>
+                <li><a>BBB-</a></li>
+                <li><a>BB+</a></li>
+                <li><a>BB</a></li>
+                <li><a>BB-</a></li>
+                <li><a>B+</a></li>
+                <li><a>B</a></li>
+                <li><a>B-</a></li>
+            </ul>
+        </div>
+        <div class="submenuselect">
+            <ul>
+                <li><a>贸易融资</a></li>
+                <li><a>融资租赁</a></li>
+                <li><a>债券借贷</a></li>
+                <li><a>股票及其他股权借贷</a></li>
+                <li><a>其它贷款</a></li>
+
+            </ul>
+        </div>
+        <div class="submenuselect">
+            <ul>
+                <li><a>质押货款</a></li>
+                <li><a>抵押货款</a></li>
+                <li><a>保证货款</a></li>
+                <li><a>信用/免担保货款</a></li>
+                <li><a>组合担保</a></li>
+                <li><a>其他</a></li>
+            </ul>
+        </div>
+        <div class="submenuselect">
+            <ul>
+                <li><a>3%以下</a></li>
+                <li><a>3%-5%</a></li>
+                <li><a>5%-8%</a></li>
+                <li><a>8%以上</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--submenu部分结束-->
+
+<!--货款信息部分开始-->
+<div class="w loannews">
+    <div class="loannews-title">
+        <p class="fl">货款信息</p>
+        <p class="fr">更多></p>
+    </div>
+    <div class="loannews-content">
+        <div class="loannews-content-item1">
+            <div class="loannews-content-top">
+            <div class="loannews-items1">
+                <img src="../images/yh1.fw.png" alt=""/>
+                <h3>神华蒙西煤化股份有限公司</h3>
+                <p>信用评级: AAA</p>
+                <p>货款担保方式: 抵押贷款</p>
+                <p>货款期限: 24个月</p>
+                <p>年化贷款利率: 6.0%</p>
+                <span>8000</span>
+                <p>申请贷款 (万元)</p>
+                <button>查看详情</button>
+            </div>
+            <div class="loannews-items1">
+                <img src="../images/yh2.fw.png" alt=""/>
+                <h3>乌海市新世纪钛合金有限公司</h3>
+                <p>信用评级: AAA</p>
+                <p>货款担保方式: 组合担保</p>
+                <p>货款期限: 6个月</p>
+                <p>年化贷款利率: 6.5%</p>
+                <span>10000</span>
+                <p>申请贷款 (万元)</p>
+                <button>查看详情</button>
+            </div>
+            <div class="loannews-items1">
+                <img src="../images/yh1.fw.png" alt=""/>
+                <h3>内蒙第一机械制造集团有限公司</h3>
+                <p>信用评级: AA+</p>
+                <p>货款担保方式: 信用/免担保贷款</p>
+                <p>货款期限: 24个月</p>
+                <p>年化贷款利率: 7.0%</p>
+                <span>900</span>
+                <p>申请贷款 (万元)</p>
+                <button>查看详情</button>
+            </div>
+            <div class="nomargin loannews-items1">
+                <img src="../images/yh1.fw.png" alt=""/>
+                <h3>包头北方创业股份有限公司</h3>
+                <p>信用评级: AA+</p>
+                <p>货款担保方式: 抵押贷款</p>
+                <p>货款期限: 24个月</p>
+                <p>年化贷款利率: 8.0%</p>
+                <span>660</span>
+                <p>申请贷款 (万元)</p>
+                <button>查看详情</button>
+            </div>
+        </div>
+            <div class="loannews-content-top">
+            <div class="loannews-items1">
+                <img src="../images/yh1.fw.png" alt=""/>
+                <h3>神华蒙西煤化股份有限公司</h3>
+                <p>信用评级: AAA</p>
+                <p>货款担保方式: 抵押贷款</p>
+                <p>货款期限: 24个月</p>
+                <p>年化贷款利率: 6.0%</p>
+                <span>8000</span>
+                <p>申请贷款 (万元)</p>
+                <button>查看详情</button>
+            </div>
+            <div class="loannews-items1">
+                <img src="../images/yh2.fw.png" alt=""/>
+                <h3>乌海市新世纪钛合金有限公司</h3>
+                <p>信用评级: AAA</p>
+                <p>货款担保方式: 组合担保</p>
+                <p>货款期限: 6个月</p>
+                <p>年化贷款利率: 6.5%</p>
+                <span>10000</span>
+                <p>申请贷款 (万元)</p>
+                <button>查看详情</button>
+            </div>
+            <div class="loannews-items1">
+                <img src="../images/yh1.fw.png" alt=""/>
+                <h3>内蒙第一机械制造集团有限公司</h3>
+                <p>信用评级: AA+</p>
+                <p>货款担保方式: 信用/免担保贷款</p>
+                <p>货款期限: 24个月</p>
+                <p>年化贷款利率: 7.0%</p>
+                <span>900</span>
+                <p>申请贷款 (万元)</p>
+                <button>查看详情</button>
+            </div>
+            <div class="nomargin loannews-items1">
+                <img src="../images/yh1.fw.png" alt=""/>
+                <h3>包头北方创业股份有限公司</h3>
+                <p>信用评级: AA+</p>
+                <p>货款担保方式: 抵押贷款</p>
+                <p>货款期限: 24个月</p>
+                <p>年化贷款利率: 8.0%</p>
+                <span>660</span>
+                <p>申请贷款 (万元)</p>
+                <button>查看详情</button>
+            </div>
+        </div>
+        </div>
+        <div class="loannews-content-item1 hide">
+            <div class="loannews-content-top">
+                <div class="loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <h3>乌海市新世纪钛合金有限公司</h3>
+                    <p>信用评级: AAA</p>
+                    <p>货款担保方式: 组合担保</p>
+                    <p>货款期限: 12个月</p>
+                    <p>年化贷款利率: 7.5%</p>
+                    <span>30000</span>
+                    <p>申请贷款 (万元)</p>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <h3>神华蒙西煤化股份有限公司</h3>
+                    <p>信用评级: AAA</p>
+                    <p>货款担保方式: 抵押贷款</p>
+                    <p>货款期限: 24个月</p>
+                    <p>年化贷款利率: 6.0%</p>
+                    <span>8000</span>
+                    <p>申请贷款 (万元)</p>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <h3>内蒙第一机械制造集团有限公司</h3>
+                    <p>信用评级: AA+</p>
+                    <p>货款担保方式: 信用/免担保贷款</p>
+                    <p>货款期限: 24个月</p>
+                    <p>年化贷款利率: 7.0%</p>
+                    <span>900</span>
+                    <p>申请贷款 (万元)</p>
+                    <button>查看详情</button>
+                </div>
+                <div class="nomargin loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <h3>包头北方创业股份有限公司</h3>
+                    <p>信用评级: AA+</p>
+                    <p>货款担保方式: 抵押贷款</p>
+                    <p>货款期限: 24个月</p>
+                    <p>年化贷款利率: 8.0%</p>
+                    <span>5000</span>
+                    <p>申请贷款 (万元)</p>
+                    <button>查看详情</button>
+                </div>
+            </div>
+            <div class="loannews-content-top">
+                <div class="loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <h3>神华蒙西煤化股份有限公司</h3>
+                    <p>信用评级: AAA</p>
+                    <p>货款担保方式: 抵押贷款</p>
+                    <p>货款期限: 12个月</p>
+                    <p>年化贷款利率: 8.0%</p>
+                    <span>9000</span>
+                    <p>申请贷款 (万元)</p>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <h3>内蒙第一机械制造集团有限公司</h3>
+                    <p>信用评级: AA+</p>
+                    <p>货款担保方式: 信用/免担保贷款</p>
+                    <p>货款期限: 7个月</p>
+                    <p>年化贷款利率: 7.0%</p>
+                    <span>10000</span>
+                    <p>申请贷款 (万元)</p>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <h3>乌海市新世纪钛合金有限公司</h3>
+                    <p>信用评级: AA+</p>
+                    <p>货款担保方式: 组合担保</p>
+                    <p>货款期限: 6个月</p>
+                    <p>年化贷款利率: 6.5%</p>
+                    <span>9000</span>
+                    <p>申请贷款 (万元)</p>
+                    <button>查看详情</button>
+                </div>
+                <div class="nomargin loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <h3>包头北方创业股份有限公司</h3>
+                    <p>信用评级: AA+</p>
+                    <p>货款担保方式: 抵押贷款</p>
+                    <p>货款期限: 18个月</p>
+                    <p>年化贷款利率: 8.0%</p>
+                    <span>5500</span>
+                    <p>申请贷款 (万元)</p>
+                    <button>查看详情</button>
+                </div>
+            </div>
+        </div>
+        <div class="loannews-content-item1 hide">
+            <div class="loannews-content-top">
+                <div class="loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <h3>神华蒙西煤化股份有限公司</h3>
+                    <p>信用评级: AAA</p>
+                    <p>货款担保方式: 抵押贷款</p>
+                    <p>货款期限: 24个月</p>
+                    <p>年化贷款利率: 6.0%</p>
+                    <span>7000</span>
+                    <p>申请贷款 (万元)</p>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <h3>乌海市新世纪钛合金有限公司</h3>
+                    <p>信用评级: AA+</p>
+                    <p>货款担保方式: 组合担保</p>
+                    <p>货款期限: 6个月</p>
+                    <p>年化贷款利率: 6.5%</p>
+                    <span>10000</span>
+                    <p>申请贷款 (万元)</p>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <h3>内蒙第一机械制造集团有限公司</h3>
+                    <p>信用评级: AA+</p>
+                    <p>货款担保方式: 信用/免担保贷款</p>
+                    <p>货款期限: 24个月</p>
+                    <p>年化贷款利率: 7.0%</p>
+                    <span>900</span>
+                    <p>申请贷款 (万元)</p>
+                    <button>查看详情</button>
+                </div>
+                <div class="nomargin loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <h3>包头北方创业股份有限公司</h3>
+                    <p>信用评级: AA+</p>
+                    <p>货款担保方式: 抵押贷款</p>
+                    <p>货款期限: 24个月</p>
+                    <p>年化贷款利率: 9.0%</p>
+                    <span>7860</span>
+                    <p>申请贷款 (万元)</p>
+                    <button>查看详情</button>
+                </div>
+            </div>
+            <div class="loannews-content-top">
+            <div class="loannews-items1">
+            <img src="../images/yh1.fw.png" alt=""/>
+            <h3>神华蒙西煤化股份有限公司</h3>
+            <p>信用评级: AAA</p>
+            <p>货款担保方式: 抵押贷款</p>
+            <p>货款期限: 24个月</p>
+            <p>年化贷款利率: 6.0%</p>
+            <span>8000</span>
+            <p>申请贷款 (万元)</p>
+            <button>查看详情</button>
+            </div>
+            <div class="loannews-items1">
+            <img src="../images/yh1.fw.png" alt=""/>
+            <h3>内蒙第一机械制造集团有限公司</h3>
+            <p>信用评级: AA+</p>
+            <p>货款担保方式: 信用/免担保贷款</p>
+            <p>货款期限: 24个月</p>
+            <p>年化贷款利率: 7.0%</p>
+            <span>900</span>
+            <p>申请贷款 (万元)</p>
+            <button>查看详情</button>
+            </div>
+            <div class="loannews-items1">
+            <img src="../images/yh2.fw.png" alt=""/>
+            <h3>乌海市新世纪钛合金有限公司</h3>
+            <p>信用评级: AAA</p>
+            <p>货款担保方式: 组合担保</p>
+            <p>货款期限: 6个月</p>
+            <p>年化贷款利率: 6.5%</p>
+            <span>10000</span>
+            <p>申请贷款 (万元)</p>
+            <button>查看详情</button>
+            </div>
+            <div class="nomargin loannews-items1">
+            <img src="../images/yh1.fw.png" alt=""/>
+            <h3>包头北方创业股份有限公司</h3>
+            <p>信用评级: AA+</p>
+            <p>货款担保方式: 抵押贷款</p>
+            <p>货款期限: 24个月</p>
+            <p>年化贷款利率: 8.0%</p>
+            <span>660</span>
+            <p>申请贷款 (万元)</p>
+            <button>查看详情</button>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!--货款信息部分结束-->
+
+<!--页码部分开始-->
+<div class="w loannews-page">
+    <div>
+        <ul>
+            <li><a class="only" href="##">1</a></li>
+            <li><a href="##">2</a></li>
+            <li><a href="##">3</a></li>
+            <li><a href="##">4</a></li>
+            <li><a href="##">5</a></li>
+            <li><a class="nextpage" href="##">下一页 ▶</a></li>
+            <li><input class="inputpage" type="text"/></li>
+            <li><a class="gotopage" href="##">转到 ▶</a></li>
+        </ul>
+    </div>
+</div>
+<!--页码部分结束-->
+
+<!--footer部分开始-->
+<div class="footer">
+    <div class="w footer-main">
+        <div class="footer-main-l fl">
+            <div class="footer-main-l-top">
+                <ul><li style="margin-left: 0">PINTEC &nbsp;|</li>
+                    <li>关于我们 &nbsp;|</li>
+                    <li>法律声明 &nbsp;|</li>
+                    <li>媒体报道 &nbsp;|</li>
+                    <li>团队介绍 &nbsp;|</li>
+                    <li>帮助中心 &nbsp;|</li>
+                    <li>友情链接 &nbsp;</li>
+                </ul><br/>
+                <p>版权所有: &nbsp;包商银行 &nbsp;信息产业备案: &nbsp;蒙ICP备05003339号 &nbsp;包头网监备案: 蒙.网警15020300292</p>
+            </div>
+            <div class="footer-main-l-bot">
+                <img src="../images/enda.png" alt=""/>
+                <img src="../images/endb.png" alt=""/>
+                <img src="../images/endc.png" alt=""/>
+                <img src="../images/endd.png" alt=""/>
+            </div>
+        </div>
+        <div class="footer-main-r fr">
+            <div class="footer-main-r-service">
+                <p>24小时服务热线</p>
+                <p>95352</p>
+                <p><i></i>在线客服 &nbsp;&nbsp;&nbsp;<i></i>客服邮箱</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--footer部分结束-->
+</body>
+</html>
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<script src="../js/syndicatedLoan.js"></script>
+<script>
+    $('.loannews-items1>button').click(function(){
+        window.location.href = '../Details/loanDetails.html';
+    });
+</script>

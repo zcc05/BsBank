@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>支付成功</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/paySuccess.css"/>
+</head>
+<body>
+<!--header部分开始-->
+<div class="w header clearfix">
+    <div class="logo fl">
+        <img src="../images/logo.fw.png" alt=""/>
+    </div>
+
+    <div class="nav fr clearfix">
+        <div class="date">
+            <i></i> <span>2016年6月23日</span>  <s></s><span>18:36</span>
+        </div>
+        <div class="menu" >
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../Details/assetsDeal.html">资产交易</a></li>
+                <li><a href="../Details/syndicatedLoan.html">联合贷款</a></li>
+                <li><a class="onlyxu" href="../Details/AssetLending.html">资金业务</a></li>
+                <li><a href="../MyAccount/AboutUs.html">关于我们</a></li>
+                <li><a href="../MyAccount/MyAccount.html">我的账户</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <script>
+        var now = new Date();
+        var years = document.getElementsByTagName('span')[0];
+        var times = document.getElementsByTagName('span')[1];
+        var d = now.getDate();
+        var m = now.getMonth();
+        var y = now.getFullYear();
+        var h = now.getHours();
+        var s = now.getMinutes();
+        function aa(bb){
+            return bb<10? "0"+bb:bb;
+        }
+        h=aa(h);
+        s=aa(s);
+        years.innerHTML = y+'年'+(m+1)+'月'+d+'日';
+        times.innerHTML = h+':'+s;
+    </script>
+
+</div>
+<!--header部分结束-->
+
+<div style="background-color: #f9f9f9;">
+    <!--content部分开始-->
+    <div class="content">
+        <div class="w content-main">
+            <i></i><h3>恭喜您!&nbsp;&nbsp;支付成功!</h3>
+            <p><span id="miao">5</span>秒钟后自动跳转到资金业务页面</p>
+        </div>
+    </div>
+    <!--content部分开始-->
+</div>
+
+<!--footer部分开始-->
+<div class="footer">
+    <div class="w footer-main">
+        <div class="footer-main-l fl">
+            <div class="footer-main-l-top">
+                <ul><li style="margin-left: 0">PINTEC &nbsp;|</li>
+                    <li>关于我们 &nbsp;|</li>
+                    <li>法律声明 &nbsp;|</li>
+                    <li>媒体报道 &nbsp;|</li>
+                    <li>团队介绍 &nbsp;|</li>
+                    <li>帮助中心 &nbsp;|</li>
+                    <li>友情链接 &nbsp;</li>
+                </ul><br/>
+                <p>版权所有: &nbsp;包商银行 &nbsp;信息产业备案: &nbsp;蒙ICP备05003339号 &nbsp;包头网监备案: 蒙.网警15020300292</p>
+            </div>
+            <div class="footer-main-l-bot">
+                <img src="../images/enda.png" alt=""/>
+                <img src="../images/endb.png" alt=""/>
+                <img src="../images/endc.png" alt=""/>
+                <img src="../images/endd.png" alt=""/>
+            </div>
+        </div>
+        <div class="footer-main-r fr">
+            <div class="footer-main-r-service">
+                <p>24小时服务热线</p>
+                <p>95352</p>
+                <p><i></i>在线客服 &nbsp;&nbsp;&nbsp;<i></i>客服邮箱</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--footer部分结束-->
+</body>
+</html>
+<script>
+    var miao = document.getElementById('miao');
+    var num=5;
+    fn();
+    function fn(){
+        if(num>-1){
+            miao.innerHTML=num;
+            num--;
+            setTimeout(arguments.callee,1000);
+        }else{
+            window.location.href="../Details/LendingDetails.html";
+        }
+    }
+</script>

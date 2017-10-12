@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>资产详情</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/propertyDetails.css"/>
+</head>
+<body>
+<!--header部分开始-->
+<div class="w header clearfix">
+    <div class="logo fl">
+        <img src="../images/logo.fw.png" alt=""/>
+    </div>
+
+    <div class="nav fr clearfix">
+        <div class="date">
+            <i></i> <span>2016年6月23日</span>  <s></s><span>18:36</span>
+        </div>
+        <div class="menu" >
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a class="onlyxu" href="../Details/assetsDeal.html">资产交易</a></li>
+                <li><a href="../Details/syndicatedLoan.html">联合贷款</a></li>
+                <li><a href="../Details/AssetLending.html">资金业务</a></li>
+                <li><a href="../MyAccount/AboutUs.html">关于我们</a></li>
+                <li><a href="../MyAccount/MyAccount.html">我的账户</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <script>
+        var now = new Date();
+        var years = document.getElementsByTagName('span')[0];
+        var times = document.getElementsByTagName('span')[1];
+        var d = now.getDate();
+        var m = now.getMonth();
+        var y = now.getFullYear();
+        var h = now.getHours();
+        var s = now.getMinutes();
+        function aa(bb){
+            return bb<10? "0"+bb:bb;
+        }
+        h=aa(h);
+        s=aa(s);
+        years.innerHTML = y+'年'+(m+1)+'月'+d+'日';
+        times.innerHTML = h+':'+s;
+    </script>
+
+</div>
+<!--header部分结束-->
+
+<div style="background-color: #f9f9f9;">
+<div class="w propertyDetailsAll">
+    <!--包头钢铁债券部分开始-->
+    <div class="btgtbond ">
+        <div class="btgtbond-top clearfix">
+            <h3 class="fl">包头钢铁集团2016年公司债券</h3>
+            <h3 class="fr bianhao">资产编号:BS20160612571</h3>
+        </div>
+        <ul>
+            <li><p class="red">70000</p><i>总资产额度(万元)</i></li>
+            <li><p>5.9</p><i>预计年化收益(%)</i></li>
+            <li><p>12</p><i>资产期限(月)</i></li>
+            <li><p>AAA</p><i>风险评级</i></li>
+            <li style="border-right: none"><p>债券类</p><i>产品类型</i></li>
+        </ul>
+        <div class="btgtbond-bot">
+            <p>资产主体: 包头钢铁 (集团) 有限责任公司</p>
+            <p>融资用途: 本次债券募集资金在扣除发行费用后，拟全部用于补充流动资金</p>
+            <p>还款说明: 每年付息一次，到期一次还本，最后一期利息随本金的兑付一起支付</p>
+            <p>担保方式: 本期债券无担保</p>
+            <p>融资期限说明: 1年</p>
+        </div>
+        <p class="qiye fr"><a href="募集说明书.doc">募集说明书(下载)</a></p>
+
+    </div>
+    <!--包头钢铁债券部分结束-->
+
+    <!--产品介绍部分开始-->
+    <div class="product-presentation">
+        <h3>产品介绍</h3>
+        <div>
+            <p> (一) 发行主体: 包头钢铁(集团)有限责任公司</p>
+            <p> (二) 债券名称: 包头钢铁集团2016年公司债券</p>
+            <p> (三) 发行规模: 不超过人民币7亿元(含70,000 万元)</p>
+            <p> (四) 票面金额: 人民币100 元</p>
+            <p> (五) 债券期限: 本期债券拟定期限不超过1年(1年期)</p>
+            <p> (六) 债券形式: 实名制记账式公司债券。投资者认购的本期债券在债券登记机构开立的托管账户登记托管</p>
+            <p> (七) 发行价格: 按面值平价发行</p>
+            <p> (八) 发行方式: 本期债券将以非公开方式向具备相应风险识别和承担能力的合格投资者发行</p>
+            <p> (九) 计息方式: 本期债券采用附息式固定利率，预期5.8% ，单利按年计息，不计复利，逾期不另计利息</p>
+            <p> (十) 还本付息方式: 在本期债券的计息期限内，每年付息一次，到期一次还本，最后一期利息随本金的兑付一起支付</p>
+            <p> (十一) 担保措施及担保方式: 本期债券无担保</p>
+            <p> (十二) 募集资金用途: 本次债券募集资金在扣除发行费用后，拟全部用于补充流动资金</p>
+        </div>
+    </div>
+    <!--产品介绍部分结束-->
+
+    <!--风险控制部分开始-->
+    <div class="product-presentation measure">
+        <h3>风控措施</h3>
+        <div>
+            <p> (一) 设立偿债专项账户</p>
+            <p> (二) 制定并严格执行资金管理计划</p>
+            <p> (三) 充分发挥债券受托管理人的作用</p>
+            <p> (四) 制定《债券持有人会议规则》</p>
+            <p> (五) 严格履行信息披露义务</p>
+            <p> (六) 防范违约措施</p>
+            <p> (七) 建立偿债应急响应机制</p>
+        </div>
+    </div>
+    <!--风险控制部分结束-->
+
+    <p class="readed"><input type="checkbox" class="agree"/>我已认真阅读并同意《资产购买协议》</p>
+    <button id="sure">确认支付</button>
+</div>
+
+</div>
+
+<!--footer部分开始-->
+<div class="footer">
+    <div class="w footer-main">
+        <div class="footer-main-l fl">
+            <div class="footer-main-l-top">
+                <ul><li style="margin-left: 0">PINTEC &nbsp;|</li>
+                    <li>关于我们 &nbsp;|</li>
+                    <li>法律声明 &nbsp;|</li>
+                    <li>媒体报道 &nbsp;|</li>
+                    <li>团队介绍 &nbsp;|</li>
+                    <li>帮助中心 &nbsp;|</li>
+                    <li>友情链接 &nbsp;</li>
+                </ul><br/>
+                <p>版权所有: &nbsp;包商银行 &nbsp;信息产业备案: &nbsp;蒙ICP备05003339号 &nbsp;包头网监备案: 蒙.网警15020300292</p>
+            </div>
+            <div class="footer-main-l-bot">
+                <img src="../images/enda.png" alt=""/>
+                <img src="../images/endb.png" alt=""/>
+                <img src="../images/endc.png" alt=""/>
+                <img src="../images/endd.png" alt=""/>
+            </div>
+        </div>
+        <div class="footer-main-r fr">
+            <div class="footer-main-r-service">
+                <p>24小时服务热线</p>
+                <p>95352</p>
+                <p><i></i>在线客服 &nbsp;&nbsp;&nbsp;<i></i>客服邮箱</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--footer部分结束-->
+</body>
+</html>
+<script>
+    window.onload=function(){
+        var sure = document.getElementById('sure');
+        sure.onclick = function () {
+            window.location.href = '../psw/enterPassword.html';
+        }
+    }
+
+</script>

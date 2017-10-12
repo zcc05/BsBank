@@ -1,0 +1,119 @@
+.btgtbond{
+    width: 90%;
+    height: 460px;
+    border: 1px solid #E9E9E9;
+    margin: 30px 0px;
+    padding: 30px 60px;
+    background-color: #fff;
+}
+.btgtbond-top{
+    width: 100%;
+    height: 45px;
+    border-bottom:1px solid #E9E9E9;
+}
+.btgtbond h3{
+    width: 50%;
+    font-size: 18px;
+    color: #525252;
+}
+.btgtbond .bianhao{
+    text-align: right;
+}
+.btgtbond ul li{
+    width: 19.9%;
+    height: 90px;
+    float: left;
+    margin:40px 0;
+    text-align: center;
+    border-right:1px solid #B4BCC6;
+}
+.btgtbond ul li p{
+    color: #F27722;
+    font-size: 30px;
+}
+.btgtbond ul li .red{
+    color:#FF3622;
+}
+.btgtbond ul li i{
+    font-size: 18px;
+    color: #B4BCC5;
+}
+.btgtbond .qiye{
+    font-size: 18px;
+    color: #B4BCC5;
+}
+.btgtbond-bot{
+    line-height: 45px;
+    font-size: 18px;
+    color:#525252;
+}
+
+.product-presentation{
+    width: 90%;
+    height: 660px;
+    padding: 30px 60px;
+    border: 1px solid #E9E9E9;
+    background-color: #fff;
+}
+.product-presentation h3{
+    width: 100%;
+    height: 45px;
+    border-bottom:1px solid #E9E9E9 ;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+.product-presentation>div>p{
+    line-height: 45px;
+    font-size: 18px;
+}
+.measure{
+    margin-top: 30px;
+    height: 360px;
+}
+
+
+
+.readed{
+    height: 126px;
+    line-height: 122px;
+    padding-left: 60px;
+    font-size: 18px;
+}
+
+.readed .agree{
+    float: left;
+    display:block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E9E9E9;
+    margin-right: 10px;
+    margin-top: 52px;
+}
+.propertyDetailsAll button{
+    width: 400px;
+    height: 60px;
+    background-color: #02CAFE;
+    /*border-radius: 10px;*/
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    margin-left: 340px;
+    margin-bottom:60px;
+    cursor: pointer;
+    border: 1px solid #77E3FF;
+
+    -moz-border-radius:10px;
+
+    -webkit-border-radius:10px;
+
+    border-radius:10px;
+
+    position:relative;
+
+    z-index:2;
+
+    behavior: url(../ie-css3.htc);
+
+}

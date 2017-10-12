@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font-family: Microsoft Yahei;
+    /*font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/!*宋体，Unicode，统一码*!/*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    /*color: #666;*/
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*a:hover{*/
+    /*color:#f2863a;*/
+/*}*/
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+/*header部分开始*/
+.header{
+    height: 80px;
+    padding: 15px 0;
+}
+.logo img{
+    /*width: 330px;*/
+    /*height: 80px;*/
+    display:block;
+    margin-left: -10px;
+    margin-top: 20px;
+
+}
+.header .nav{
+    width: 67%;
+}
+.header .nav .date{
+    font-size: 16px;
+    color:#858585 ;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 475px;
+}
+.header .nav .date i{
+    display: inline-block;
+     width: 20px;
+     height: 22px;
+     background: url("../images/jl1.png")  no-repeat -470px 2px;
+ }
+.header .nav .date s{
+    display: inline-block;
+    width: 20px;
+    height: 22px;
+    background: url("../images/jl1.png")  no-repeat -470px -31px;
+}
+.header .nav .menu{
+    width: 105%;
+    height: 40px;
+    line-height: 40px;
+}
+.header .nav .menu li{
+    float: left;
+    font-size: 22px;
+    padding: 0 18px;
+}
+.header .nav .menu li a{
+    color:#9E9E9E;
+    display: inline-block;
+}
+.header .nav .menu li a:hover{
+    color:#02CAFE;
+    cursor: pointer;
+    border-bottom: 2px solid #02CAFE;
+}
+.header .nav .menu li a.onlyxu{
+    color:#02CAFE;
+    border-bottom: 2px solid #02CAFE;
+}
+
+
+/*header部分结束*/
+
+/*footer部分开始*/
+.footer{
+    height: 200px;
+    background-color: #474747;
+
+}
+.footer .footer-main{
+    height: 200px;
+    background-color: #474747;
+    padding: 0 38px;
+}
+.footer .footer-main .footer-main-l{
+    width: 73%;
+    height: 130px;
+    margin: 35px 0 35px 0px;
+    border-right: 2px solid #8E9092;
+}
+.footer .footer-main .footer-main-l .footer-main-l-top{
+    height: 60px;
+    color: #E3E7E9;
+    margin-bottom: 20px;
+}
+.footer .footer-main .footer-main-l .footer-main-l-top li{
+    float: left;
+    margin-left: 5px;
+    font-size: 14px;
+}
+.footer .footer-main .footer-main-l .footer-main-l-top p{
+    font-size: 16px;
+    margin-top: 15px;
+}
+.footer .footer-main .footer-main-l .footer-main-l-bot img{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer .footer-main .footer-main-r{
+    width: 26%;
+    height: 200px;
+    color: #E3E7E9;
+}
+.footer .footer-main .footer-main-r .footer-main-r-service{
+    width: 87%;
+    height: 130px;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+.footer .footer-main .footer-main-r .footer-main-r-service p{
+    font-size: 18px;
+    line-height: 45px;
+}
+.footer .footer-main .footer-main-r .footer-main-r-service 	p:nth-child(2){
+    font-size: 22px;
+}
+.footer .footer-main .footer-main-r .footer-main-r-service i{
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('../images/sefw.fw.png') no-repeat left 13px;
+}
+
+/*footer部分结束*/

@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的账户</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/MyAccount.css"/>
+</head>
+<body>
+<!--header部分开始-->
+<div class="w header clearfix">
+    <div class="logo fl">
+        <img src="../images/logo.fw.png" alt=""/>
+    </div>
+
+    <div class="nav fr clearfix">
+        <div class="date">
+            <i></i> <span>2016年6月23日</span>  <s></s><span>18:36</span>
+        </div>
+        <div class="menu" >
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../Details/assetsDeal.html">资产交易</a></li>
+                <li><a href="../Details/syndicatedLoan.html">联合贷款</a></li>
+                <li><a href="../Details/AssetLending.html">资金业务</a></li>
+                <li><a href="../MyAccount/AboutUs.html">关于我们</a></li>
+                <li><a class="onlyxu" href="../MyAccount/MyAccount.html">我的账户</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <script>
+        var now = new Date();
+        var years = document.getElementsByTagName('span')[0];
+        var times = document.getElementsByTagName('span')[1];
+        var d = now.getDate();
+        var m = now.getMonth();
+        var y = now.getFullYear();
+        var h = now.getHours();
+        var s = now.getMinutes();
+        function aa(bb){
+            return bb<10? "0"+bb:bb;
+        }
+        h=aa(h);
+        s=aa(s);
+        years.innerHTML = y+'年'+(m+1)+'月'+d+'日';
+        times.innerHTML = h+':'+s;
+    </script>
+
+</div>
+<!--header部分结束-->
+<div style="background-color: #f9f9f9;">
+    <!--用户登录信息部分开始-->
+    <div class="w accountMessage">
+        <i></i>
+    <!--<img src="images/我的账号.fw.png" alt="/">-->
+    <div class="fr accountMessage-r">
+        <h3>欢迎, 鄂尔多斯农村商业银行!</h3>
+        <div>
+            <p>会员账号: 93485701239</p>
+            <p>累计交易笔数: 12</p>
+            <p>账户余额: &yen;<s>11,000,000.00</s></p>
+        </div>
+        <div>
+            <p>上次登录时间: 2016年6月21日 12:09:31</p>
+            <p>累计交易金额: 1,234,923,874.32</p>
+            <button>转协定存款</button>
+        </div>
+        <a>修改登录密码</a>
+    </div>
+    </div>
+    <!--用户登录信息部分结束-->
+
+    <!--信息详情部分开始-->
+    <div class="w accountContent">
+    <div class="accountContent-top clearfix">
+        <p>户名: 鄂尔多斯农村商业银行</p>
+        <p>存管账号: 298 2939 4123 4234</p>
+        <p>存管开户行: 包商银行北京分行</p>
+    </div>
+    <div class="accountContent-mid">
+        <div>
+            <span>13,829,183.50</span>
+            <p>昨日收益 (元)</p>
+        </div>
+        <div>
+            <span>3,000,000.00</span>
+            <p>历史收益 (元)</p>
+        </div>
+        <div>
+            <span>45,679,183.5</span>
+            <p>昨日支出 (元)</p>
+        </div>
+        <div class="noborder">
+            <span>56,508,367</span>
+            <p>历史支出 (元)</p>
+        </div>
+
+    </div>
+
+        <div class="accountContent-mid rental">
+            <p>86,829,183.50</p>
+            <i>资产总额 (元)</i>
+            <a href="totalAssets.html" class="fr">更多</a>
+        </div>
+
+        <div class="accountContent-mid rental">
+            <p>12,000,000.00</p>
+            <i>负债总额 (元)</i>
+            <a href="totalLiabilities.html" class="fr">更多</a>
+        </div>
+
+        <!--日历部分开始-->
+        <div class="fund-calendar">
+            <h3>资金变动日历</h3>
+            <div class="calendar-color">
+                <div class="fl"><i class="red"></i>今天</div>
+                <div class="fl"><i class="green"></i>资金流出</div>
+                <div class="fl"><i class="blue"></i>资金流入</div>
+                <div class="fl"><i class="yellow"></i>资金 有流入&流出</div>
+            </div>
+            <div class="calendar-main">
+                <div class="calendar-title">
+                    <img src="../images/qiyue.fw.png" alt=""/>
+                    <p>July</p>
+                </div>
+                <div class="calendar-content">
+                    <table width="100%" height="100%">
+                        <tr>
+                            <td>Mon</td>
+                            <td>Tue</td>
+                            <td>Wed</td>
+                            <td>Thu</td>
+                            <td>Fri</td>
+                            <td>Sat</td>
+                            <td>Sun</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2<i class="yelsign"></i>
+                                <span class="hide">资金有流入和流出</span>
+                            </td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17<i class="bluesign"></i>
+                                <span class="hide">资金有流入</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>19<i class="redsign"></i>
+                                <span class="hide">今天</span>
+                            </td>
+
+                            <td>20</td>
+                            <td>21<i class="gresign"></i>
+                                <span class="hide">资金有流出</span>
+                            </td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td>31</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!--日历部分结束-->
+</div>
+
+    <!--信息详情部分结束-->
+</div>
+
+
+<!--footer部分开始-->
+<div class="footer">
+    <div class="w footer-main">
+        <div class="footer-main-l fl">
+            <div class="footer-main-l-top">
+                <ul><li style="margin-left: 0">PINTEC &nbsp;|</li>
+                    <li>关于我们 &nbsp;|</li>
+                    <li>法律声明 &nbsp;|</li>
+                    <li>媒体报道 &nbsp;|</li>
+                    <li>团队介绍 &nbsp;|</li>
+                    <li>帮助中心 &nbsp;|</li>
+                    <li>友情链接 &nbsp;</li>
+                </ul><br/>
+                <p>版权所有: &nbsp;包商银行 &nbsp;信息产业备案: &nbsp;蒙ICP备05003339号 &nbsp;包头网监备案: 蒙.网警15020300292</p>
+            </div>
+            <div class="footer-main-l-bot">
+                <img src="../images/enda.png" alt=""/>
+                <img src="../images/endb.png" alt=""/>
+                <img src="../images/endc.png" alt=""/>
+                <img src="../images/endd.png" alt=""/>
+            </div>
+        </div>
+        <div class="footer-main-r fr">
+            <div class="footer-main-r-service">
+                <p>24小时服务热线</p>
+                <p>95352</p>
+                <p><i></i>在线客服 &nbsp;&nbsp;&nbsp;<i></i>客服邮箱</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--footer部分结束-->
+</body>
+</html>
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<script>
+    $(function(){
+        function change(a){
+            $(a).mouseenter(function(){
+                $(this).siblings('span').show();
+            })
+            $(a).mouseleave(function(){
+                $(this).siblings('span').hide();
+            })
+        }
+        change('.yelsign');
+        change('.bluesign');
+        change('.redsign');
+        change('.gresign');
+
+    });
+</script>

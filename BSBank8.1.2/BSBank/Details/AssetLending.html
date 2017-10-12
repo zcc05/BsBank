@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>资产业务</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/syndicatedLoan.css"/>
+</head>
+<body>
+<!--header部分开始-->
+<div class="w header clearfix">
+    <div class="logo fl">
+        <img src="../images/logo.fw.png" alt=""/>
+    </div>
+
+    <div class="nav fr clearfix">
+        <div class="date">
+            <i></i> <span>2016年6月23日</span>  <s></s><span>18:36</span>
+        </div>
+        <div class="menu" >
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../Details/assetsDeal.html">资产交易</a></li>
+                <li><a href="../Details/syndicatedLoan.html">联合贷款</a></li>
+                <li><a class="onlyxu" href="../Details/AssetLending.html">资金业务</a></li>
+                <li><a href="../MyAccount/AboutUs.html">关于我们</a></li>
+                <li><a href="../MyAccount/MyAccount.html">我的账户</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <script>
+        var now = new Date();
+        var years = document.getElementsByTagName('span')[0];
+        var times = document.getElementsByTagName('span')[1];
+        var d = now.getDate();
+        var m = now.getMonth();
+        var y = now.getFullYear();
+        var h = now.getHours();
+        var s = now.getMinutes();
+        function aa(bb){
+            return bb<10? "0"+bb:bb;
+        }
+        h=aa(h);
+        s=aa(s);
+        years.innerHTML = y+'年'+(m+1)+'月'+d+'日';
+        times.innerHTML = h+':'+s;
+    </script>
+
+</div>
+<!--header部分结束-->
+
+<!--submenu部分开始-->
+<div class="submenu lendingSubmenu">
+    <div class="w submenuAll">
+        <ul class="submenu-l fl" >
+            <li>业务方式:</li>
+            <li>业务类型:</li>
+            <li>业务期限:</li>
+            <li>业务金额:</li>
+        </ul>
+        <div class="submenu-button fl">
+            <button>全部</button>
+            <button>全部</button>
+            <button>全部</button>
+            <button>全部</button>
+        </div>
+        <div class="submenuselect">
+            <ul>
+                <li><a>同业存款</a></li>
+                <li><a>信用拆借</a></li>
+                <li><a>抵押拆借</a></li>
+            </ul>
+        </div>
+        <div class="submenuselect">
+            <ul>
+                <li><a>借入</a></li>
+                <li><a>借出</a></li>
+            </ul>
+        </div>
+        <div class="submenuselect">
+            <ul>
+                <li><a>O/N</a></li>
+                <li><a>1W</a></li>
+                <li><a>2W</a></li>
+                <li><a>1M-9M</a></li>
+                <li><a>1Y</a></li>
+            </ul>
+        </div>
+        <div class="submenuselect">
+            <ul>
+                <li><a>5000万以下</a></li>
+                <li><a>5000-1亿</a></li>
+                <li><a>1亿-3亿</a></li>
+                <li><a>3亿-5亿</a></li>
+                <li><a>5亿以上</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+<!--submenu部分结束-->
+
+<!--资产信息部分开始-->
+<div class="w loannews">
+    <div class="loannews-title">
+        <p class="fl">资产信息</p>
+        <p class="fr">更多></p>
+    </div>
+    <div class="loannews-content lendingContent">
+        <div class="loannews-content-item1">
+            <div class="loannews-content-top">
+                <div class="loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <p>鄂尔多斯农村商业银行定期存款</p>
+                    <span>7000</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>5.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>12</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <p>内蒙古银行定期存款</p>
+                    <span>10000</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>6.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>5</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh3.fw.png" alt=""/>
+                    <p>乌海银行定期存款</p>
+                    <span>900</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>6</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>4</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="nomargin loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <p>内蒙古银行定期存款</p>
+                    <span>660</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>9.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>12</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+            </div>
+            <div class="loannews-content-top">
+                <div class="loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <p>鄂尔多斯农村商业银行定期存款</p>
+                    <span>5000</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>5.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>12</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <p>内蒙古银行定期存款</p>
+                    <span>70000</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>6.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>5</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh3.fw.png" alt=""/>
+                    <p>乌海银行定期存款</p>
+                    <span>1200</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>6</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>4</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="nomargin loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <p>内蒙古银行定期存款</p>
+                    <span>3460</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>9.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>12</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+            </div>
+        </div>
+        <div class="loannews-content-item1 hide">
+            <div class="loannews-content-top">
+                <div class="loannews-items1">
+                    <img src="../images/yh3.fw.png" alt=""/>
+                    <p>乌海银行定期存款</p>
+                    <span>900</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>6</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>4</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <p>鄂尔多斯农村商业银行定期存款</p>
+                    <span>8000</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>6.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>24</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <p>内蒙古银行定期存款</p>
+                    <span>10000</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>6.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>5</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="nomargin loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <p>内蒙古银行定期存款</p>
+                    <span>660</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>9.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>12</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+            </div>
+            <div class="loannews-content-top">
+                <div class="loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <p>鄂尔多斯农村商业银行定期存款</p>
+                    <span>7000</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>5.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>6</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh3.fw.png" alt=""/>
+                    <h3>乌海银行定期存款</h3>
+                    <span>1200</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>6</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>4</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <p>内蒙古银行定期存款</p>
+                    <span>70000</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>6.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>5</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="nomargin loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <p>内蒙古银行定期存款</p>
+                    <span>3460</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>9.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>12</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+            </div>
+        </div>
+        <div class="loannews-content-item1 hide">
+            <div class="loannews-content-top">
+                <div class="loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <p>鄂尔多斯农村商业银行定期存款</p>
+                    <span>7000</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>5.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>12</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <p>内蒙古银行定期存款</p>
+                    <span>10000</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>6.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>5</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh3.fw.png" alt=""/>
+                    <p>乌海银行定期存款</p>
+                    <span>900</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>6</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>4</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="nomargin loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <p>内蒙古银行定期存款</p>
+                    <span>660</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>9.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>12</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+            </div>
+            <div class="loannews-content-top">
+                <div class="loannews-items1">
+                    <img src="../images/yh1.fw.png" alt=""/>
+                    <p>鄂尔多斯农村商业银行定期存款</p>
+                    <span>5000</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>5.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>12</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <p>内蒙古银行定期存款</p>
+                    <span>70000</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>6.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>5</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="loannews-items1">
+                    <img src="../images/yh3.fw.png" alt=""/>
+                    <p>乌海银行定期存款</p>
+                    <span>1200</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>6</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>4</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+                <div class="nomargin loannews-items1">
+                    <img src="../images/yh2.fw.png" alt=""/>
+                    <p>内蒙古银行定期存款</p>
+                    <span>8800</span>
+                    <p>拆出金额 (万元)</p>
+                    <div class="assetsDealitems">
+                        <i>9.8</i>
+                        <p>年化利率(%)</p>
+                    </div>
+                    <div class="assetsDealitems">
+                        <i>12</i>
+                        <p>拆借期限(月)</p>
+                    </div>
+                    <button>查看详情</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--资产信息部分结束-->
+
+<!--页码部分开始-->
+<div class="w loannews-page">
+    <div>
+        <ul>
+            <li><a class="only" href="##">1</a></li>
+            <li><a href="##">2</a></li>
+            <li><a href="##">3</a></li>
+            <li><a href="##">4</a></li>
+            <li><a href="##">5</a></li>
+            <li><a class="nextpage" href="##">下一页 ▶</a></li>
+            <li><input class="inputpage" type="text"/></li>
+            <li><a class="gotopage" href="##">转到 ▶</a></li>
+        </ul>
+    </div>
+</div>
+<!--页码部分结束-->
+
+<!--footer部分开始-->
+<div class="footer">
+    <div class="w footer-main">
+        <div class="footer-main-l fl">
+            <div class="footer-main-l-top">
+                <ul><li style="margin-left: 0">PINTEC &nbsp;|</li>
+                    <li>关于我们 &nbsp;|</li>
+                    <li>法律声明 &nbsp;|</li>
+                    <li>媒体报道 &nbsp;|</li>
+                    <li>团队介绍 &nbsp;|</li>
+                    <li>帮助中心 &nbsp;|</li>
+                    <li>友情链接 &nbsp;</li>
+                </ul><br/>
+                <p>版权所有: &nbsp;包商银行 &nbsp;信息产业备案: &nbsp;蒙ICP备05003339号 &nbsp;包头网监备案: 蒙.网警15020300292</p>
+            </div>
+            <div class="footer-main-l-bot">
+                <img src="../images/enda.png" alt=""/>
+                <img src="../images/endb.png" alt=""/>
+                <img src="../images/endc.png" alt=""/>
+                <img src="../images/endd.png" alt=""/>
+            </div>
+        </div>
+        <div class="footer-main-r fr">
+            <div class="footer-main-r-service">
+                <p>24小时服务热线</p>
+                <p>95352</p>
+                <p><i></i>在线客服 &nbsp;&nbsp;&nbsp;<i></i>客服邮箱</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--footer部分结束-->
+</body>
+</html>
+<script src="../lib/jquery-1.11.1.min.js"></script>
+<script src="../js/syndicatedLoan.js"></script>
+<script>
+    $('.loannews-items1>button').click(function(){
+        window.location.href = 'LendingDetails.html';
+    });
+</script>

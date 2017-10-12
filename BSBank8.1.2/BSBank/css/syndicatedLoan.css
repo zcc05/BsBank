@@ -1,0 +1,295 @@
+/*联合页面开始公共页*/
+/*<!--submenu部分开始-->*/
+.submenu{
+    /*width: 100%;*/
+    height: 270px;
+    /*border-top: 2px solid #DEDEDE;*/
+    /*border-bottom: 2px solid #DEDEDE;*/
+    margin: 20px 0;
+}
+.submenuAll {
+    height: 250px;
+    padding: 10px;
+    font-size: 17px;
+    color: #535353;
+    border-top: 2px solid #DEDEDE;
+    border-bottom: 2px solid #DEDEDE;
+}
+.submenu-l{
+    width: 14.5%;
+    line-height: 50px;
+    
+}
+.submenu .submenu-button button{
+    display: block;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    margin: 13px 10px;
+    color:#fff;
+    background-color: #2CAEDF;
+    /*border-radius: 10px;*/
+    font-size: 18px;
+
+    -moz-border-radius:10px;
+
+    -webkit-border-radius:10px;
+
+    border-radius:10px;
+
+    position:relative;
+
+    z-index:2;
+
+    behavior: url(../ie-css3.htc);
+
+}
+
+.submenu .submenuselect{
+    width: 78.5%;
+    height: 50px;
+    float: right;
+}
+.submenu .submenuselect ul li{
+    float: left;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.submenuselect input{
+    width: 152px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #919191;
+    /*border-radius: 5px;*/
+    margin-left: 50px;
+    color:#B8B8B8;
+    font-size: 18px;
+    text-align: center;
+
+    -moz-border-radius:5px;
+
+    -webkit-border-radius:5px;
+
+    border-radius:5px;
+
+    position:absolute;
+
+    z-index:2;
+
+    behavior: url(../ie-css3.htc);
+
+}
+.submenuselect .more{
+    margin-left:445px;
+}
+.submenuselect i{
+    color:#360000;
+}
+/*<!--submenu部分结束-->*/
+
+/*货款信息部分开始*/
+.loannews{
+    height: 912px;
+}
+.loannews-title{
+    height: 20px;
+    color:#9E9E9E;
+    font-size: 18px;
+    cursor: pointer;
+}
+.loannews-content{
+    height: 890px;
+}
+.loannews-content img{
+    width: 230px;
+    height: 65px;
+}
+.loannews-content-top{
+    height: 400px;
+    padding-top: 45px;
+}
+.loannews-content-top>div{
+    width: 23%;
+    height: 400px;
+    float: left;
+    border:1px solid #EEEEEE;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 36px;
+}
+.loannews-content-top .nomargin{
+    margin-right: 0;
+}
+.loannews-content-top>div h3{
+    color: #2D2D2D;
+}
+.loannews-content-top>div span{
+    font-size: 35px;
+    color:#FF5656;
+}
+.loannews-content-top>div button{
+    width: 200px;
+    height: 44px;
+    line-height: 44px;
+    background-color: #2EADE0;
+    /*border: 1px solid #EF731C;*/
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 10px 15px;
+    cursor: pointer;
+    border: 1px solid #77E3FF;
+
+    -moz-border-radius:5px;
+
+    -webkit-border-radius:5px;
+
+    border-radius:5px;
+
+    position: relative;
+
+    z-index:2;
+
+    behavior: url(../ie-css3.htc);
+
+}
+
+
+/*货款信息部分结束*/
+
+
+
+.loannews-page{
+    height: 74px;
+    margin-top: 40px;
+    position: relative;
+}
+.loannews-page>div{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -240px;
+    margin-top: 20px;
+}
+.loannews-page ul li{
+    float: left;
+    text-align: center;
+    line-height: 36px;
+    font-size: 18px;
+    margin: 0 5px;
+    color:#fff;
+}
+.loannews-page ul li a{
+    display:inline-block;
+    width: 36px;
+    height: 36px;
+    border:1px solid #EEE;
+    color:#1C252F;
+
+}
+
+.loannews-page ul li a:hover{
+    color: #fff;
+    background-color: #2CAEDF;
+    border-color: #3CAEDF;
+}
+.loannews-page ul li .nextpage{
+    width: 84px;
+    height: 36px;
+}
+.loannews-page ul li .inputpage{
+    width: 60px;
+    font-size: 18px;
+    height: 35px;
+    text-align: center;
+    border:1px solid #EEE;
+}
+.loannews-page ul li .gotopage{
+    width: 65px;
+}
+.loannews-page ul li a.only{
+    background-color: #2CAEDF;
+    border-color: #3CAEDF;
+    color:#fff;
+}
+
+/*联合页面开始加上公共页*/
+
+
+
+
+
+/*资产交易页面开始*/
+.assetsDealitems{
+    width: 50%;
+    height: 70px;
+    line-height: 30px;
+    float: left;
+}
+.assetsDealitems i{
+    color:#F2863B;
+}
+
+
+/*资产交易页面结束*/
+
+
+
+/*资产拆借部分开始*/
+.lendingSubmenu{
+    height: 230px;
+}
+
+.lendingSubmenu .submenuAll{
+    height: 210px;
+}
+.lendingContent .loannews-content-top>div{
+    line-height: 55px;
+}
+.lendingContent .loannews-content-top>div span{
+    font-size: 50px;
+}
+/*资产拆借部分结束*/
+
+
+/*资产总额页面开始*/
+.totalAssets{
+    height: 850px;
+}
+.totalAssetsTitle{
+    text-align: center;
+    height: 110px;
+    font-size: 20px;
+    padding: 10px 0;
+    line-height: 55px;
+    color:#4A4A4A;
+}
+
+.totalAssetsTitle p{
+    font-size: 45px;
+    color: #FC4F3E;
+}
+.totalAssetsTitle a{
+    color:#4A4A4A;
+    margin-top: -70px;
+}
+.totalAssetsTable tr{
+    height: 85px;
+    border-bottom: 2px solid #E2E2E2;
+}
+.totalAssetsTable tr.topBorder{
+    border-top: 2px solid #E2E2E2;
+}
+.totalAssetsTable a{
+    color:#F18638;
+}
+/*资产总额页面结束*/
+
+
+/*负债总额页面开始*/
+.totalLiTable{
+    text-align: center;
+}
+
+/*负债总额页面结束*/
